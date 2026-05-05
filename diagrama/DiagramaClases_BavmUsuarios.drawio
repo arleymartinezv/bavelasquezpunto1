@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="BavmUsuarios - Diagrama de Clases">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="User" value="&lt;b&gt;User&lt;/b&gt;&lt;br&gt;&lt;i&gt;Model&lt;/i&gt;" style="swimlane;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="400" y="60" width="240" height="280" as="geometry" />
+    </mxCell>
+    <mxCell id="User_f0" value="- id: Long" style="text;strokeColor=none;fillColor=#fff2cc;align=left;spacingLeft=4;fontSize=10;" vertex="1" parent="User">
+      <mxGeometry x="0" y="40" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="User_f1" value="- nombre: String" style="text;strokeColor=none;fillColor=#fff2cc;align=left;spacingLeft=4;fontSize=10;" vertex="1" parent="User">
+      <mxGeometry x="0" y="60" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="User_f2" value="- correo: String" style="text;strokeColor=none;fillColor=#fff2cc;align=left;spacingLeft=4;fontSize=10;" vertex="1" parent="User">
+      <mxGeometry x="0" y="80" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="User_f3" value="- edad: int" style="text;strokeColor=none;fillColor=#fff2cc;align=left;spacingLeft=4;fontSize=10;" vertex="1" parent="User">
+      <mxGeometry x="0" y="100" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="User_m0" value="+ getId(): Long" style="text;strokeColor=none;fillColor=#f8cecc;align=left;spacingLeft=4;fontSize=10;" vertex="1" parent="User">
+      <mxGeometry x="0" y="120" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="User_m1" value="+ setId(Long): void" style="text;strokeColor=none;fillColor=#f8cecc;align=left;spacingLeft=4;fontSize=10;" vertex="1" parent="User">
+      <mxGeometry x="0" y="140" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="User_m2" value="+ getNombre(): String" style="text;strokeColor=none;fillColor=#f8cecc;align=left;spacingLeft=4;fontSize=10;" vertex="1" parent="User">
+      <mxGeometry x="0" y="160" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="User_m3" value="+ setNombre(String): void" style="text;strokeColor=none;fillColor=#f8cecc;align=left;spacingLeft=4;fontSize=10;" vertex="1" parent="User">
+      <mxGeometry x="0" y="180" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="User_m4" value="+ getCorreo(): String" style="text;strokeColor=none;fillColor=#f8cecc;align=left;spacingLeft=4;fontSize=10;" vertex="1" parent="User">
+      <mxGeometry x="0" y="200" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="User_m5" value="+ setCorreo(String): void" style="text;strokeColor=none;fillColor=#f8cecc;align=left;spacingLeft=4;fontSize=10;" vertex="1" parent="User">
+      <mxGeometry x="0" y="220" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="User_m6" value="+ getEdad(): int" style="text;strokeColor=none;fillColor=#f8cecc;align=left;spacingLeft=4;fontSize=10;" vertex="1" parent="User">
+      <mxGeometry x="0" y="240" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="User_m7" value="+ setEdad(int): void" style="text;strokeColor=none;fillColor=#f8cecc;align=left;spacingLeft=4;fontSize=10;" vertex="1" parent="User">
+      <mxGeometry x="0" y="260" width="240" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="UsuarioService" value="&lt;b&gt;UsuarioService&lt;/b&gt;&lt;br&gt;&lt;i&gt;@Service&lt;/i&gt;" style="swimlane;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="400" y="320" width="260" height="140" as="geometry" />
+    </mxCell>
+    <mxCell id="UsuarioService_f0" value="- usuarios: List&lt;User&gt;" style="text;strokeColor=none;fillColor=#fff2cc;align=left;spacingLeft=4;fontSize=10;" vertex="1" parent="UsuarioService">
+      <mxGeometry x="0" y="40" width="260" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="UsuarioService_f1" value="- contador: AtomicLong" style="text;strokeColor=none;fillColor=#fff2cc;align=left;spacingLeft=4;fontSize=10;" vertex="1" parent="UsuarioService">
+      <mxGeometry x="0" y="60" width="260" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="UsuarioService_m0" value="+ listarUsuarios(): List&lt;User&gt;" style="text;strokeColor=none;fillColor=#f8cecc;align=left;spacingLeft=4;fontSize=10;" vertex="1" parent="UsuarioService">
+      <mxGeometry x="0" y="80" width="260" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="UsuarioService_m1" value="+ registrarUsuario(User): User" style="text;strokeColor=none;fillColor=#f8cecc;align=left;spacingLeft=4;fontSize=10;" vertex="1" parent="UsuarioService">
+      <mxGeometry x="0" y="100" width="260" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="UsuarioService_m2" value="+ eliminarUsuario(Long): boolean" style="text;strokeColor=none;fillColor=#f8cecc;align=left;spacingLeft=4;fontSize=10;" vertex="1" parent="UsuarioService">
+      <mxGeometry x="0" y="120" width="260" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="UsuarioController" value="&lt;b&gt;UsuarioController&lt;/b&gt;&lt;br&gt;&lt;i&gt;@RestController&lt;/i&gt;" style="swimlane;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="400" y="540" width="260" height="120" as="geometry" />
+    </mxCell>
+    <mxCell id="UsuarioController_f0" value="- usuarioService: UsuarioService" style="text;strokeColor=none;fillColor=#fff2cc;align=left;spacingLeft=4;fontSize=10;" vertex="1" parent="UsuarioController">
+      <mxGeometry x="0" y="40" width="260" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="UsuarioController_m0" value="+ listarUsuarios(): List&lt;User&gt;" style="text;strokeColor=none;fillColor=#f8cecc;align=left;spacingLeft=4;fontSize=10;" vertex="1" parent="UsuarioController">
+      <mxGeometry x="0" y="60" width="260" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="UsuarioController_m1" value="+ registrarUsuario(User): User" style="text;strokeColor=none;fillColor=#f8cecc;align=left;spacingLeft=4;fontSize=10;" vertex="1" parent="UsuarioController">
+      <mxGeometry x="0" y="80" width="260" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="UsuarioController_m2" value="+ eliminarUsuario(Long): String" style="text;strokeColor=none;fillColor=#f8cecc;align=left;spacingLeft=4;fontSize=10;" vertex="1" parent="UsuarioController">
+      <mxGeometry x="0" y="100" width="260" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="E0" value="usa" style="edgeStyle=orthogonalEdgeStyle;dashed=1;endArrow=open;endFill=0;" edge="1" source="UsuarioService" target="User" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="E1" value="inyecta" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;" edge="1" source="UsuarioController" target="UsuarioService" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
